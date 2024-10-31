@@ -62,13 +62,13 @@ export const Sidebar = () => {
                     {openItemIndex === index && item.subItems && item.subItems.length > 0 && (
                         <div
                             className={cn(
-                                "flex flex-col gap-2 mt-2 items-start",
-                                isCollapsedSidebar &&
-                                "absolute left-full bg-gray-200 border border-gray-300 rounded mt-0 ml-1",
+                                "flex flex-col gap-2 items-start",
+                                isCollapsedSidebar ? "absolute left-full bg-gray-200 border border-gray-300 rounded mt-0 ml-1" : "mt-2"
                             )}
                         >
                             {item.subItems.map((subItem, subIndex) => (
                                 <div
+                                    className={"w-[100%]"}
                                     key={subIndex}
                                     onClick={(e) => {
                                         e.stopPropagation()

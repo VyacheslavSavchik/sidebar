@@ -52,7 +52,7 @@ export const CustomLink = ({
     return (
         <Link onClick={currentLinkHandler}
               className={cn(
-                  "flex items-center w-[100%] h-10 rounded-lg text-black cursor-pointer text-lg transition-all",
+                  "flex items-center w-[100%] rounded-lg h-10 text-black cursor-pointer text-lg transition-all",
                   "hover:bg-gray-300 active:bg-blue-300 focus-visible:bg-gray-300 focus-visible:outline-none",
                   isCollapsed ? "justify-center w-[80%]" : "justify-start pl-2",
                   isActiveLink && "bg-indigo-200 text-blue-600",
